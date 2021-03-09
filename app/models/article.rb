@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-    has_many :categories
+    has_one :category
     validates :title, :presence => true
     validates :content, :presence => true
 
